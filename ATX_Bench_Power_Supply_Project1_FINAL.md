@@ -167,10 +167,13 @@ Color is a cross-check only. The exact connector, keying, pin number, signal, vi
 ## 5.2 Connector evidence
 
 Supplied evidence:
-- `../evidence/photos/photo_01.jpg` — internal source PSU / harness evidence
-- `../evidence/photos/photo_02.jpg` — front panel / +3.3 V measurement
+-  — internal source PSU / harness evidence
+- <img width="500" height="550" alt="ด้านในซัพพาย" src="https://github.com/user-attachments/assets/58786dfe-fb0f-4586-8bb0-916a9e5ea86d" /> 
 
-Exact verified connector mapping for the selected physical PSU: **-**.
+- — front panel / +3.3 V measurement
+<img width="300" height="400" alt="3V" src="https://github.com/user-attachments/assets/8dbc38de-f389-4b4b-8e08-4b352292ba58" />
+
+Exact verified connector mapping for the selected physical PSU: .
 
 ---
 
@@ -194,7 +197,9 @@ The final schematic must show:
 - any minimum-load circuit, marked not fitted unless approved.
 
 ### Final as-built schematic
-**File:** `-`
+
+<img width="500" height="300" alt="pic kicad project1 complete" src="https://github.com/user-attachments/assets/f5cc8450-93ab-4c3c-b956-3fe698409896" />
+
 
 No schematic drawing has been fabricated in this report.
 
@@ -213,7 +218,11 @@ The course requires front-panel and internal-layout drawings with dimensions, te
 - DC socket marking: **12 V, 120 W max**
 
 ### Final front-panel / internal layout drawing
-**File:** `-`
+
+<img width="300" height="450" alt="กัปตันวาด" src="https://github.com/user-attachments/assets/cab19cc2-a8f5-4a38-9d30-cdaddf856407" />
+
+<img width="500" height="300" alt="พอสวาด" src="https://github.com/user-attachments/assets/b71de8d1-8f7e-463a-9ff9-ef6b14866159" />
+
 
 ---
 
@@ -281,7 +290,19 @@ Construction is required to be performed with the AC cable physically removed.
 12. Record every deviation from the approved design before proceeding.
 
 ### Construction evidence
-The supplied photos are stored in `evidence/photos/`.
+The supplied photos are stored in 
+
+<img width="200" height="250" alt="สีขาว" src="https://github.com/user-attachments/assets/1b0edb18-3f39-4052-a160-885c704d3c47" />  <img width="200" height="250" alt="สายไฟปลอก" src="https://github.com/user-attachments/assets/dbc347c3-e024-4aa2-a1cd-25bd7bc08b2d" />  <img width="200" height="250" alt="อุปกรณ์" src="https://github.com/user-attachments/assets/a30de203-ad6d-4740-ba46-cdb5d5ec29c1" />  <img width="300" height="200" alt="LINE_ALBUM_1102569 BE_261001_4" src="https://github.com/user-attachments/assets/561a6692-7799-4114-8a92-71cdd68314de" />  <img width="200" height="250" alt="พันสายไฟ" src="https://github.com/user-attachments/assets/60ef1c15-702d-47de-98bc-50d7eac5026b" />  <img width="300" height="200" alt="LINE_ALBUM_1102569 BE_261001_6" src="https://github.com/user-attachments/assets/a76e001e-1f32-469d-8dd8-bb501e717f4a" />  <img width="200" height="250" alt="LINE_ALBUM_1102569 BE_261001_3" src="https://github.com/user-attachments/assets/36ef05d0-2bbd-4d99-b42a-eb5c92f25316" />  <img width="200" height="250" alt="3V" src="https://github.com/user-attachments/assets/fae05e63-f52d-4f75-b9a6-d9a644075555" />  <img width="200" height="250" alt="5V" src="https://github.com/user-attachments/assets/ae709ea0-ed9b-49f7-aa2c-643fceda1e80" />  <img width="200" height="250" alt="12 V เอาอันนี้ไปใส่" src="https://github.com/user-attachments/assets/da5a55c3-aeb6-4709-8abb-692cfdb5924f" />  <img width="200" height="250" alt="22 V" src="https://github.com/user-attachments/assets/e457f6a9-fec2-42f9-83fd-bf533e86c122" />  
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -387,13 +408,13 @@ The course requires, for each accessible rail, no-load and approved-load measure
 
 ### Formula
 
-\[
-\% \Delta V = \frac{V_{load}-V_{no-load}}{V_{no-load}}\times100\%
-\]
+$$
+% \Delta V = \frac{V_{load}-V_{no-load}}{V_{no-load}}\times100%
+$$
 
-\[
+$$
 V_{drop}=V_{upstream}-V_{post}
-\]
+$$
 
 ### Test table
 
@@ -461,11 +482,9 @@ The course requires an approved temperature instrument, an agreed test load, at 
 
 ## 18.1 Fixed-rail regulation
 
-Required:
+Required:  
 
-\[
-\% \Delta V = \frac{V_{load}-V_{no-load}}{V_{no-load}}\times100\%
-\]
+%ΔV = [(V_load - V_no-load) / V_no-load] * 100%
 
 Current measured no-load averages:
 
@@ -481,9 +500,9 @@ Because loaded values were not supplied:
 
 ## 18.2 Branch voltage drop
 
-\[
-V_{drop}=V_{upstream}-V_{post}
-\]
+$$
+V_{\text{drop}} = V_{\text{upstream}} - V_{\text{post}}
+$$
 
 Actual upstream and post measurements are:
 
@@ -493,9 +512,9 @@ Therefore calculated branch drop is not reported.
 
 ## 18.3 Output power
 
-\[
-P_{out}=V_{out}I_{out}
-\]
+$$
+P_{\text{out}} = V_{\text{out}} I_{\text{out}}
+$$
 
 At the recorded adjustable output:
 
@@ -505,9 +524,9 @@ At the recorded adjustable output:
 
 ## 18.4 Converter loss
 
-\[
-P_{loss}=P_{in}-P_{out}
-\]
+$$
+P_{\text{loss}} = P_{\text{in}} - P_{\text{out}}
+$$
 
 Actual converter input current and measured efficiency:
 
@@ -537,13 +556,13 @@ No temperature measurements were supplied, so no thermal loss estimate or temper
 
 | Photo | Evidence description |
 |---|---|
-| [Photo 1](../evidence/photos/photo_01.jpg) | Source PSU / internal low-voltage harness evidence |
-| [Photo 2](../evidence/photos/photo_02.jpg) | +3.3 V DMM measurement |
-| [Photo 3](../evidence/photos/photo_03.jpg) | +5 V DMM measurement |
-| [Photo 4](../evidence/photos/photo_04.jpg) | +12 V DMM measurement |
-| [Photo 5](../evidence/photos/photo_05.jpg) | Adjustable output / 22.00 V DMM measurement |
+|  | Source PSU / internal low-voltage harness evidence |
+|   <img width="350" height="400" alt="3V" src="https://github.com/user-attachments/assets/48e2d517-f783-4d58-b183-1dec78078f6f" /> | +3.3 V DMM measurement |
+|   <img width="350" height="400" alt="5V" src="https://github.com/user-attachments/assets/81362bf1-ef1b-4f5f-ae87-043e233f33a5" /> | +5 V DMM measurement |
+|   <img width="350" height="400" alt="12 V เอาอันนี้ไปใส่" src="https://github.com/user-attachments/assets/5ca300eb-75e2-42c5-9a38-0c53f3083b7d" /> | +12 V DMM measurement |
+|   <img width="350" height="400" alt="22 V" src="https://github.com/user-attachments/assets/2e34741d-8148-4313-84e0-0e97fb413fd0" /> | Adjustable output / 22.00 V DMM measurement |
 
-**Additional evidence specifically showing insulation/resraint/strain relief/labels:** use the supplied construction photos as visual evidence; exact image-to-feature annotation: `-`.
+**Additional evidence specifically showing insulation/resraint/strain relief/labels:** use the supplied construction photos as visual evidence; exact image-to-feature annotation: .
 
 ---
 
